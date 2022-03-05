@@ -15,6 +15,8 @@ const ComponentBase = ({ value, currency, countryCode }: FormDataProps) => {
     if (sessionInfo && component) {
         return <Component type={component} sessionId={sessionInfo.id} sessionData={sessionInfo.sessionData} />;
     }
+    console.log('test');
+    
     return <div>Loading...</div>;
 };
 
